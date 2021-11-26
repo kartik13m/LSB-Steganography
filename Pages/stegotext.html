@@ -54,8 +54,18 @@
             </div>
         </nav>
 
-
-        <div class="container fluid-container image-stego-card">
+        <!-- Buttons -->
+        <div class="container fluid-container chooseende">
+            <button class="btn btn-primary encode-txt">
+                Encode
+            </button>
+            <button class="btn btn-primary decode-txt">
+                Decode
+            </button>
+        </div>
+        <!-- Input Card -->
+        <!-- Encode -->
+        <div class="container fluid-container image-stego-card display-imagestego-card">
 
             <form action="">
                 <label class="form-label" for="">
@@ -68,8 +78,24 @@
                 </label>
                 <textarea class="form-control" name="" id="" rows="5"></textarea>
                 <br></br>
-                <button class="btn btn-primary form-control" type='submit'>Submit</button>
+                <button class="btn btn-primary form-control" type='submit'>Encode</button>
             </form>
+
+
+        </div>
+        
+        <!-- DECODE -->
+        <div class="container fluid-container image-stego-card display-decodecard">
+
+            <form action="">
+                <label class="form-label" for="">
+                    <h2>Cover Image</h2>
+                </label>
+                <input class="form-control" type="file" name="" id="" accept="image/*">
+                <br>
+                <button class="btn btn-primary form-control" type='submit'>Decode</button>
+            </form>
+
         </div>
 
 
@@ -102,6 +128,7 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
     <script src="/JavaScript/index.js"></script>
+    <script src="/JavaScript/encodedecode.js"></script>
 </body>
 
 </html>
